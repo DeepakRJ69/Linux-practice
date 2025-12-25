@@ -82,3 +82,6 @@ few IMP command by which I encounter while facing issue:
  git remote add origin https://github.com/DeepakRJ69/Linux-practice
 git remote -v
  git pull origin main --allow-unrelated-histories
+
+
+...................................................…............…......The end...………………………………………………………………………………………………………………………………………………...
