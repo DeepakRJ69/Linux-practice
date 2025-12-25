@@ -1,2 +1,3 @@
 # Linux-practice
-It is the linux study content 
+It have the linux content
+Author-Deepak Ranjan Mohanty
