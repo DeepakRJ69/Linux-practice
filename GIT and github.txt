@@ -77,3 +77,8 @@ git reset --hard <commit hash>
 
 fork: it is a rough copy
 A fork is a new repository that shares code and visibility setting with the original "upstream"
+
+few IMP command by which I encounter while facing issue:
+ git remote add origin https://github.com/DeepakRJ69/Linux-practice
+git remote -v
+ git pull origin main --allow-unrelated-histories
