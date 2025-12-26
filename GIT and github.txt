@@ -1,0 +1,87 @@
+GIT-
+version control system is a tools that helps to track changes in code.
+Git is a Version Control System. it is popular, free and open source fast and scalable.
+to configure in side gitbash
+ git config --global user.name "DeepakRJ69"
+ git config --global user.email "mohantyrdeepak02@gmail.com"
+ git config --list
+
+
+https://github.com/DeepakRJ69/Linux-practice.git
+
+git clone <somelink>
+
+git status
+
+after modify a file we have to follow two step 1 is add and another is commit
+
+untracked file: which file is not track by git (new file).
+modify after change or odify (changed)
+stage is ready to  commite (add)
+
+unmodified unchanged(unmodify)
+
+Add and Commit:
+Add: adds new and changed files in your working diirectory to the Git stageing area
+Git  add <file name>
+git add .
+
+commit- it is the record of change
+git commit -m "some message"
+
+
+to show the local repo changes into remote we "push"
+git push origin main
+
+origin -for github repo (repo)
+main-brach
+
+
+init command:
+
+git init - for initiate any folder into git
+git remote add origin <link>
+git remote -v to verify remote
+git branch to check branch
+git branch -M main to rename branch
+git push origin main   or git push -u origin main
+
+ Branch Command:
+git branch
+git branch -M main (to rename)
+git checkout <branch name>  to navigate
+git branch -b <new branch name>  (to create branch)
+git branch -d <branch name>  (to delete branch)
+
+
+merge:
+
+git diff <branch name to compare>  
+git merge <branch name>
+way2: PR(pull request):
+to manually in git hub we have to do
+to download the code from remote to local machine we use the below command: git pull origin main
+undo changes: case1: staged changes):
+git reset <file name>
+git reset
+
+case2: commit changes undo):
+git reset HEAD~1
+
+git log (to see all changes log)
+
+CASE3: commited changes (for many commit)
+git reset <commit hash>
+
+git reset --hard <commit hash>
+
+fork: it is a rough copy
+A fork is a new repository that shares code and visibility setting with the original "upstream"
+
+few IMP command by which I encounter while facing issue:
+ git remote add origin https://github.com/DeepakRJ69/Linux-practice
+git remote -v
+ git pull origin main --allow-unrelated-histories
+
+
+...................................................…............…......The end...………………………………………………………………………………………………………………………………………………...
