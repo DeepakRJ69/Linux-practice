@@ -54,6 +54,10 @@ git branch -b <new branch name>  (to create branch)
 git branch -d <branch name>  (to delete branch)
 git push -u origin <branch name> (if you create a branch by local machine you want to apear it on remote/gethub account we have to push it)
 
+git pull origin main (before delete  branch in local)
+git merge <branch name>
+git branch -d <branch name>  (to delete branch)
+git push origin --delete <deleted branch name>(after delete branch in local push it to the remote so that in remote the same thing happen in remote too)
 merge:
 
 git diff <branch name to compare>  
