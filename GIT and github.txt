@@ -52,7 +52,7 @@ git branch -M main (to rename)
 git checkout <branch name>  to navigate
 git branch -b <new branch name>  (to create branch)
 git branch -d <branch name>  (to delete branch)
-
+git push -u origin <branch name> (if you create a branch by local machine you want to apear it on remote/gethub account we have to push it)
 
 merge:
 
