@@ -1,0 +1,8 @@
+create a folder:
+change it's permission to 000 through chmod
+after that try to open (unable to open )
+fix:
+check permission of the file
+ls -l <file name>
+change the permission through chmod 
+Added needed permission done.
