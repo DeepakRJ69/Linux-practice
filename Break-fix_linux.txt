@@ -1,3 +1,4 @@
+Break and fix 1:
 create a folder:
 change it's permission to 000 through chmod
 after that try to open (unable to open )
@@ -6,3 +7,11 @@ check permission of the file
 ls -l <file name>
 change the permission through chmod 
 Added needed permission done.
+Break and fix 2:
+create user
+try to use sudo(superuser do) command 
+like : sudo ls 
+facing error
+went to the sudoers file edit there  for limited access by (visudo)
+or we can went to the /etc/sudoers and check the group which have all sudo access and add the user into the "wheel" group.
+now I am able to use the sudo command for the user.
