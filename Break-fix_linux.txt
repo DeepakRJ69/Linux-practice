@@ -15,3 +15,8 @@ facing error
 went to the sudoers file edit there  for limited access by (visudo)
 or we can went to the /etc/sudoers and check the group which have all sudo access and add the user into the "wheel" group.
 now I am able to use the sudo command for the user.
+Break and fix 2:
+create file in root user try to open it but unable to read
+checked the owner is root
+checged the owner to Deepak as I am in Deepak user logged in by sudo chown Deepak:deepak info.txt 
+now I am able to read as owner is changed
