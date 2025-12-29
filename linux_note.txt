@@ -1,0 +1,6 @@
+Day-4
+Disk usage and logs
+Checked filesystem backing /
+simulate disk pressure using fallocate
+analize disk usage with du
+review /var/log/secure for sudo activity

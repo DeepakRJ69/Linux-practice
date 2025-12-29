@@ -20,3 +20,11 @@ create file in root user try to open it but unable to read
 checked the owner is root
 checged the owner to Deepak as I am in Deepak user logged in by sudo chown Deepak:deepak info.txt 
 now I am able to read as owner is changed
+Day-4:
+cd ~ or  / (inside it create a file of 200M by using fallocate)
+checked free space using df before create
+simulate disk pressure using fallocate
+analyze disk usage with du
+and delete by rm command
+checked free space using df after delete
+after check the disk utilization
