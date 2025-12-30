@@ -4,3 +4,9 @@ Checked filesystem backing /
 simulate disk pressure using fallocate
 analize disk usage with du
 review /var/log/secure for sudo activity
+
+Day-5
+Networking Basic
+Checked IP, gateway, DNS
+tested HTTP/HTTPS using curl
+verified open and closed ports
