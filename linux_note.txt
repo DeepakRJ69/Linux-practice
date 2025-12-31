@@ -10,3 +10,9 @@ Networking Basic
 Checked IP, gateway, DNS
 tested HTTP/HTTPS using curl
 verified open and closed ports
+
+Day-6 system and services
+Checked running services
+Stopped and Started sshd
+Reviewed sshd logs using journalctl 
+Verified service emblement at boot
