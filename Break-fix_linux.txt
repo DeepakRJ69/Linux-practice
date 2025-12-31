@@ -28,3 +28,10 @@ analyze disk usage with du
 and delete by rm command
 checked free space using df after delete
 after check the disk utilization
+
+Day -6
+service failure and recovery
+stopped crond to simulate service failure
+Identified failure using systemctl and journalctl 
+restart the crond and verified running state 
+confirm service enabled at boot

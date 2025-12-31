@@ -16,3 +16,9 @@ Checked running services
 Stopped and Started sshd
 Reviewed sshd logs using journalctl 
 Verified service emblement at boot
+Night:
+service failure and recovery
+stopped crond to simulate service failure
+Identified failure using systemctl and journalctl 
+restart the crond and verified running state 
+confirm service enabled at boot
