@@ -22,3 +22,14 @@ stopped crond to simulate service failure
 Identified failure using systemctl and journalctl 
 restart the crond and verified running state 
 confirm service enabled at boot
+
+Day:7
+Local  variable: Define NAME = VALUE 
+they exist only in your current shell. If you start a new shell (type bash), they disappear
+set : shows all variable 
+
+and environment variable: Create export role=value. They are passed down to child processes. meaning they remain available if you starta new sub-shell. 
+env or printenv : shows only environment variable.
+PATH: Function PATH is a list of directories separated by colons(:)when you type a command like ls , Linux searches these directories in order to find the excitable file.
+Security Risk: Including a dot(.) at the start of your path is dangerous. it allows someone to place a malicious file in your current directory and running it.
+$path=/path/new
