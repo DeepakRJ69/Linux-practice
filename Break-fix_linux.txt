@@ -35,3 +35,9 @@ stopped crond to simulate service failure
 Identified failure using systemctl and journalctl 
 restart the crond and verified running state 
 confirm service enabled at boot
+
+DAY-7
+break: open .bashrc and set a environment variable export PATH=""
+after ls: no result found
+Fix: login into root user edit .bashrc PATH=/usr/bin:/bin
+now login to the user and try once again ls now through output
