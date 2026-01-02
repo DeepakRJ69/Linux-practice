@@ -1,0 +1,12 @@
+THRESHOLD=80
+USAGE=$(df / | tail -1 | awk '{print $5}' | tr -d '%')
+
+echo "Disk usage is: $USAGE%"
+
+if [ "$USAGE" -gt "$THRESHOLD" ]; then
+    echo "WARNING: Disk usage above threshold"
+    exit 1
+else
+    echo "Disk usage under control"
+    exit 0
+fi
