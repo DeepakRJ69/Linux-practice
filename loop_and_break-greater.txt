@@ -1,0 +1,27 @@
+for i in Deepak Ranjan Mohanty
+do 
+	echo "name one by one:$i"
+done
+num=0
+while [ $num le 5]
+do 
+	echo "num is: $num"
+done
+
+echo $?
+
+if [ 10 -eq 10 ]
+then
+	echo "num is equal"
+elif [ num -le 5 ]
+	echo "num is $num"
+else
+	echo "num is grater then 5"
+fi
+#until loop
+a=10
+until [ $a -eq 1 ]
+do 
+	echo "num is: $a"
+	a = `expr $-1`
+done
