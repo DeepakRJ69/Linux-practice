@@ -1,0 +1,36 @@
+#!/bin/bash
+
+LOGFILE="/tmp/service_check.log"
+
+log() {
+    echo "$(date '+%F %T') - $1" >> "$LOGFILE"
+}
+
+check_service() {
+    systemctl is-active --quiet "$1"
+    if [ $? -eq 0 ]; then
+        log "Service $1 is running"
+        return 0
+    else
+        log "Service $1 is NOT running"
+        return 1
+    fi
+}
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <service-name>"
+    exit 1
+fi
+
+SERVICE="$1"
+
+check_service "$SERVICE"
+RESULT=$?
+
+if [ $RESULT -ne 0 ]; then
+    echo "Service $SERVICE is down"
+    exit 2
+else
+    echo "Service $SERVICE is healthy"
+    exit 0
+fi
