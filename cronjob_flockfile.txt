@@ -1,0 +1,17 @@
+#!/bin/bash
+
+LOG="/tmp/cron_safe.log"
+
+if [ -f /tmp/cron.lock ]; then
+    echo "$(date '+%F %T') - Job already running" >> "$LOG"
+    exit 1
+fi
+
+touch /tmp/cron.lock
+echo "$(date '+%F %T') - Job started" >> "$LOG"
+
+sleep 90   # simulate long task
+
+rm -f /tmp/cron.lock
+echo "$(date '+%F %T') - Job finished" >> "$LOG"
+exit 0
